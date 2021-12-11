@@ -1,10 +1,100 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Tuftstar</title>
+        <meta name="description" content="Tuftstar Site">
+        <meta charset="UTF-8">
+        <style>
+            body{
+                background-color: blanchedalmond;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+            }
+            .codespace{
+                font-family: 'Cascadia Code', Consolas, Monaco, monospace;
+                background-color: grey;
+                color: white;
+                border: 1mm gainsboro inset;
+                padding: 10px;
+            }
+            .head{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 0.5cm;
+                line-height: 0.53cm;
+                color: #798600;
+                background-color: rgb(0, 216, 0);
+                text-align: center;
+                border: 2mm rgb(0, 210, 0) outset;
+            }
+            .parbox{
+                border: 4px double black;
+                padding: 2mm;
+            }
+            h1{
+                font-size: 50px;
+            }
+            h3{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 30px;
+            }
+            h4{
+                font-size: 26px;
+            }
+        </style>
+    </head>
     <body>
-        <h1>
-            Tuftstar's Site
-        </h1>
-        <a href="https://tuftstar.netlify.app/sw.key">Key</a>
+        <div class="head">
+            <h1>
+                Tuftstar
+            </h1>
+        </div>
+        <br>
+        <div class="parbox">
+            <h2>
+                Hello, I am Tuftstar.
+            </h2>
+        </div>
+        <br>
+        <br>
+        <div class="parbox">
+            <h3>
+                My Code-OSS APT Repo
+            </h3>
+            What I did is just build the <a href="https://github.com/microsoft/vscode/">official Code - OSS repo on GitHub</a> and update my APT repo.<br>
+            <h4>
+                How To Install
+            </h4>
+            First, install my key.
+            <div class="codespace">
+                curl -sSL https://tuftstar.netlify.app/sw.key | sudo apt-key add - 
+            </div>
+            Then, add the repo into your sources.list.
+            <div class="codespace">
+                sudo bash -c 'echo "deb https://tuftstar.netlify.app/codeossrepo /" >> /etc/apt/sources.list'
+            </div>
+            Finally, install Code-OSS.
+            <div class="codespace">
+                sudo apt update<br>
+                sudo apt install code-oss<br>
+            </div>
+            <br>
+            note: I can't update this repo every day, but I'll my best to keep it up-to-date.
+            <div class="parbox">
+                <h4>
+                    How to use the Visual Studio Marketplace in Code-OSS
+                </h4>
+                By default, Code - OSS does not support Visual Studio Marketplace. To fix that, add these into /usr/share/code-oss/resources/app/product.json:
+                <div class="codespace">
+                    "extensionsGallery": {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;"serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;"cacheUrl": "https://vscode.blob.core.windows.net/gallery/index",<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;"itemUrl": "https://marketplace.visualstudio.com/items",<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;"resourceUrlTemplate": "https://{publisher}.vscode-unpkg.net/{publisher}/{name}/{version}/{path}",<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;"recommendationsUrl": "https://az764295.vo.msecnd.net/extensions/workspaceRecommendations.json.gz"<br>
+                    }
+                </div>
+            </div>
+        </div>
         <br>
     </body>
 </html>
