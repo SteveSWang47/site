@@ -1,0 +1,24 @@
+Package: code-oss
+Architecture: amd64
+Version: 1.64.0-1639207750
+Priority: optional
+Section: devel
+Maintainer: Microsoft Corporation <vscode-linux@microsoft.com>
+Installed-Size: 348974
+Provides: visual-studio-code-oss
+Depends: libnss3 (>= 2:3.26), gnupg, apt, libxkbfile1, libsecret-1-0, libgtk-3-0 (>= 3.10.0), libxss1, libgbm1
+Conflicts: visual-studio-code-oss
+Replaces: visual-studio-code-oss
+Filename: ./code-oss_1.64.0-1639207750_amd64.deb
+Size: 83981172
+MD5sum: 379bcb70e8e0591d9550c5e8815f6a5a
+SHA1: 407d1b9c31cf0840be21c98c3aca2f28179ea3a5
+SHA256: 6b8d8d11f6968b5a6676b1ec2b39a3ea1ca0e00bb428d15630ca9eb0dbd71bdb
+SHA512: aaf74548d94cb5eb2b99458a7aff8d793bc996e2c61b3c3b9617458545a4955db8f3be0738ddccaf3856cd2388d403ae0bed902d1f8a77854cfcb5f436ba174f
+Homepage: https://code.visualstudio.com/
+Description: Code editing. Redefined.
+ Visual Studio Code is a new choice of tool that combines the simplicity of
+ a code editor with what developers need for the core edit-build-debug cycle.
+ See https://code.visualstudio.com/docs/setup/linux for installation
+ instructions and FAQ.
+
