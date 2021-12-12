@@ -6,7 +6,8 @@
         <meta charset="UTF-8">
         <style>
             body{
-                background-color: blanchedalmond;
+                background-color: rgb(0, 255, 149);
+                background-image: linear-gradient(96deg, rgb(252, 225, 185), rgb(255, 240, 217));
                 font-family: 'Times New Roman', Times, serif;
                 font-size: 20px;
             }
@@ -17,16 +18,22 @@
                 border: 1mm gainsboro inset;
                 padding: 10px;
             }
+            code{
+                font-family: 'Cascadia Code', Consolas, Monaco, monospace;
+                background-color: gainsboro;
+            }
             .head{
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 0.5cm;
                 line-height: 0.53cm;
                 color: #798600;
                 background-color: rgb(0, 216, 0);
+                background-image: linear-gradient(rgb(0, 253, 0), rgb(0, 199, 0));
                 text-align: center;
                 border: 2mm rgb(0, 210, 0) outset;
             }
             .parbox{
+                background-color: blanchedalmond;
                 border: 4px double black;
                 padding: 2mm;
             }
@@ -78,12 +85,12 @@
                 sudo apt install code-oss<br>
             </div>
             <br>
-            note: I can't update this repo every day, but I'll my best to keep it up-to-date.
+            note: I can't update this repo every day, but I'll do my best to keep it up-to-date.
             <div class="parbox">
                 <h4>
                     How to use the Visual Studio Marketplace in Code-OSS
                 </h4>
-                By default, Code - OSS does not support Visual Studio Marketplace. To fix that, add these into /usr/share/code-oss/resources/app/product.json:
+                By default, Code - OSS does not support Visual Studio Marketplace. To fix that, add these into <code>~/.config/Code - OSS/product.json</code> (or <code>/usr/share/code-oss/resources/app/product.json</code>, but it will be rewritten after updating/reinstalling):
                 <div class="codespace">
                     "extensionsGallery": {<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;"serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",<br>
