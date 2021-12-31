@@ -1,20 +1,20 @@
 Package: code-oss
 Architecture: amd64
-Version: 1.64.0-1640425212
+Version: 1.64.0-1640936958
 Priority: optional
 Section: devel
 Maintainer: Microsoft Corporation <vscode-linux@microsoft.com>
-Installed-Size: 349786
+Installed-Size: 349617
 Provides: visual-studio-code-oss
 Depends: libnss3 (>= 2:3.26), gnupg, apt, libxkbfile1, libsecret-1-0, libgtk-3-0 (>= 3.10.0), libxss1, libgbm1
 Conflicts: visual-studio-code-oss
 Replaces: visual-studio-code-oss
-Filename: ./code-oss_1.64.0-1640425212_amd64.deb
-Size: 84011808
-MD5sum: fe4e9e32eca863a2381dc3f525123d21
-SHA1: 9fd59e085cd1c92aec867aabe15257f3bded2d96
-SHA256: 36c9cd53fa21122718146f5bbd94b7e9fe238768284b60ebab1d5f130529d667
-SHA512: 7f1d322d03a9d4d8fdbb986a6b549b3c5245b73ed957c06316bc6107e3e454f4691f461366e78c6ff4bd2b66b04bf67f02a4103bab936c6b3c9e845ea49fe715
+Filename: ./code-oss_1.64.0-1640936958_amd64.deb
+Size: 84018748
+MD5sum: a2d85e3db29facb3cd56ba31b707d44f
+SHA1: 7d5329eeee6b608bc5e449840d68f0e3d29784a7
+SHA256: ce9f9b77fc44a8ee52d7ee9f543151529ccee700ad3971c20b4bd1b284d17352
+SHA512: 8593938e6e115d5a7630e67627de2aa2967c1b6c8c528c7a5101f1b88096c0cc0e9fa3b302ca2202e87ff860cef73d033c52ab5ab547a7c410f00c432be36622
 Homepage: https://code.visualstudio.com/
 Description: Code editing. Redefined.
  Visual Studio Code is a new choice of tool that combines the simplicity of
