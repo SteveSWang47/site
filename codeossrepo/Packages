@@ -1,3 +1,17 @@
+Package: codeoss-marketplace
+Architecture: all
+Version: 1.0
+Priority: optional
+Maintainer: Steve W <47wang@gmail.com>
+Depends: code-oss
+Filename: ./code-oss-marketplace.deb
+Size: 1104
+MD5sum: 19da9075d051bca2ab5a330e7f6f5524
+SHA1: bce61f30e500a2c12ba182a70ef897a15ed4a65c
+SHA256: b3819b5eafdccf91b213b3edf9dccfc9e5cf7abe5e21ba7185ee68caca4cf881
+SHA512: 877a4ba6d5d6c89020161ec9bd5fa9dd37309a8f71515a7e13bbad6c78caf2c47890afc280d79637af342e70571202ce9f9d936e92d2ad705f5e1b878f841319
+Description: Let Code-OSS use Visual Studio Marketplace.
+
 Package: code-oss
 Architecture: amd64
 Version: 1.68.0-1653792800
