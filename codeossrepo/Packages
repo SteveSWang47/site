@@ -14,21 +14,22 @@ Description: Let Code-OSS use Visual Studio Marketplace.
 
 Package: code-oss
 Architecture: amd64
-Version: 1.70.0-1657447913
+Version: 1.70.0-1659406801
 Priority: optional
 Section: devel
 Maintainer: Microsoft Corporation <vscode-linux@microsoft.com>
-Installed-Size: 371589
+Installed-Size: 368590
 Provides: visual-studio-code-oss
-Depends: libnss3 (>= 2:3.26), gnupg, apt, libxkbfile1, libsecret-1-0, libgtk-3-0 (>= 3.10.0), libxss1, libgbm1
+Depends: ca-certificates, libasound2 (>= 1.0.16), libatk-bridge2.0-0 (>= 2.5.3), libatk1.0-0 (>= 2.2.0), libatspi2.0-0 (>= 2.9.90), libc6 (>= 2.14), libc6 (>= 2.17), libc6 (>= 2.2.5), libc6 (>= 2.28), libc6 (>= 2.29), libc6 (>= 2.30), libcairo2 (>= 1.6.0), libcups2 (>= 1.6.0), libcurl3-gnutls | libcurl3-nss | libcurl4 | libcurl3, libdbus-1-3 (>= 1.5.12), libdrm2 (>= 2.4.38), libexpat1 (>= 2.0.1), libgbm1 (>= 8.1~0), libgcc1 (>= 1:3.0), libglib2.0-0 (>= 2.12.0), libglib2.0-0 (>= 2.39.4), libgtk-3-0 (>= 3.9.10), libgtk-3-0 (>= 3.9.10) | libgtk-4-1, libnspr4 (>= 2:4.9-2~), libnss3 (>= 2:3.22), libnss3 (>= 3.26), libpango-1.0-0 (>= 1.14.0), libsecret-1-0 (>= 0.18), libstdc++6 (>= 5), libstdc++6 (>= 5.2), libstdc++6 (>= 9), libx11-6, libx11-6 (>= 2:1.4.99.1), libxcb1 (>= 1.9.2), libxcomposite1 (>= 1:0.4.4-1), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxkbcommon0 (>= 0.4.1), libxkbfile1 (>= 1:1.1.0), libxrandr2, xdg-utils (>= 1.0.2)
+Recommends: libvulkan1
 Conflicts: visual-studio-code-oss
 Replaces: visual-studio-code-oss
-Filename: ./code-oss_1.70.0-1657447913_amd64.deb
-Size: 87960920
-MD5sum: 7163edb036e4527ffc1bbca4b84faa7d
-SHA1: e6c37ea372c5d4cea5721a3be84e1404b59a0732
-SHA256: bf4c26c20f6902ab4b82ed9e532450636b23923b7df858b6fd7a1c2e33da9223
-SHA512: 28d253daa0752eaf0e76474682a471172e679cbe1d708e19f44db357e767edf3f25f97ba76a58aef6d4cf6fe03600601fb96bb8564fc2c5283cd23cae3b7224e
+Filename: ./code-oss_1.70.0-1659406801_amd64.deb
+Size: 87554320
+MD5sum: 3d82c899447eacc35a5d5b5f95e3a34a
+SHA1: 803eea49c144365409ddf04db5264fc08436516c
+SHA256: 2a385bf1cad8d3572ace0d006897b69224893e14a6ce6326ae32b88e2ff38634
+SHA512: 978b07ef249b4da2d38a12cb32f2e0076cceb071a246b0a97aee8ef40dd1789e710e9abd710a5ca1cc9adaba621b83a27a8781a041a4e0e9571bb22f35a2ae27
 Homepage: https://code.visualstudio.com/
 Description: Code editing. Redefined.
  Visual Studio Code is a new choice of tool that combines the simplicity of
